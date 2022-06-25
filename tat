@@ -1,0 +1,77 @@
+[33mcommit fcc9e20ba308d9d1302e0b1e0e10109ad0545eec[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 15:33:29 2022 -0700
+
+    complete 15, post compose out to home page
+
+[33mcommit bfcddaf38cd40aa656e6069e6edd5181fc66d506[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 12:45:45 2022 -0700
+
+    complete 11, add global post and pust them
+
+[33mcommit 9b000caf5de9e44aa0041486915704b97d778d79[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 12:29:48 2022 -0700
+
+    complete 10, save posts to JS object
+
+[33mcommit a0511a351dc95f8ce527ed36a2e2a3b19acdeaab[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 11:46:23 2022 -0700
+
+    complete 9, add css compose page
+
+[33mcommit 07860f89eb035f10cce1dbdbbb8daae7488d6abb[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 09:44:11 2022 -0700
+
+    challenge 8, console.log compose input
+
+[33mcommit c606fe39b8d5e93df88be7804130a3d1f4bae34b[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 09:36:17 2022 -0700
+
+    challenge 7, create compose page
+
+[33mcommit 12844e13a800294f414be654fe0b8d9f6d9d10e6[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Fri Jun 24 09:27:36 2022 -0700
+
+    challenge 6, add link to pages
+
+[33mcommit 4390ea0a37162cf8f17664a4f4d253aaa8810596[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Thu Jun 23 14:47:17 2022 -0700
+
+    challenge 5, add about & contac page
+
+[33mcommit 9e794068a967cf87d705959aa03fe74e39507d63[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Thu Jun 23 13:23:05 2022 -0700
+
+    challenge 4, add partial folder
+
+[33mcommit d4d7a9661927a910bd870cd1fe0979df701fc305[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Thu Jun 23 13:09:48 2022 -0700
+
+    challenge 3 done
+
+[33mcommit b53917a8c8ac72b83a8299bde617b75bb7b30e09[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Thu Jun 23 13:08:25 2022 -0700
+
+    challenge 2, <%- include('') -%>
+
+[33mcommit e55e1ff8f085486bbd86c1c28a273e2f00dc0f8a[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Thu Jun 23 11:03:26 2022 -0700
+
+    challenge 1, res.rend(home)
+
+[33mcommit 8ac186ee2a9f2c6119258f37950f71295cf12f50[m
+Author: KP-Tim <kancanha@gmail.com>
+Date:   Thu Jun 23 10:24:16 2022 -0700
+
+    starting files
