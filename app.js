@@ -34,8 +34,14 @@ app.get("/compose", function (req, res) {
   res.render("compose");
 });
 
-app.get("/post/:topic", function (req, res) {
-  console.log(req.params.topic);
+app.get("/posts/:topic", function (req, res) {
+  const requestedTitle = req.params.topic;
+  posts.forEach(function (post) {
+    const storedTitle = post.title;
+    if (storedTitle === requestedTitle) {
+      console.log("Match found!");
+    }
+  });
 });
 
 app.post("/compose", function (req, res) {
