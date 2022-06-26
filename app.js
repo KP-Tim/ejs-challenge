@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const _ = require("lodash");
 
 let posts = [];
 
@@ -35,11 +36,16 @@ app.get("/compose", function (req, res) {
 });
 
 app.get("/posts/:topic", function (req, res) {
-  const requestedTitle = req.params.topic;
+  const requestedTitle = _.toLower(req.params.topic);
   posts.forEach(function (post) {
-    const storedTitle = post.title;
+    const storedTitle = _.toLower(post.title);
+    const storedContent = _.toLower(post.content);
+    console.log(storedTitle);
     if (storedTitle === requestedTitle) {
       console.log("Match found!");
+      res.render("post", { addTitle: storedTitle, addPost: storedContent });
+    } else {
+      console.log("Not a match!");
     }
   });
 });
