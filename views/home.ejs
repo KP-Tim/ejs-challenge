@@ -4,5 +4,8 @@
 <% postContent.forEach(function(titleName){ %> <% let limit = titleName.content
 %> <% let length = 100 %>
 <h1><%= titleName.title %></h1>
-<p><%= limit.substring(0, length) + " ..."%></p>
+<p>
+  <%= limit.substring(0, length) + " ..."%>
+  <a href="/posts/<%=titleName.title%>">Read More</a>
+</p>
 <% }) %> <%- include("partials/footer") -%>
