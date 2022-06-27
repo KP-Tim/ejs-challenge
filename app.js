@@ -36,16 +36,13 @@ app.get("/compose", function (req, res) {
 });
 
 app.get("/posts/:topic", function (req, res) {
-  const requestedTitle = _.toLower(req.params.topic);
+  const requestedTitle = _.lowerCase(req.params.topic);
   posts.forEach(function (post) {
-    const storedTitle = _.toLower(post.title);
-    const storedContent = _.toLower(post.content);
-    console.log(storedTitle);
+    const storedTitle = _.lowerCase(post.title);
+    const storedContent = _.lowerCase(post.content);
     if (storedTitle === requestedTitle) {
       console.log("Match found!");
-      res.render("post", { addTitle: storedTitle, addPost: storedContent });
-    } else {
-      console.log("Not a match!");
+      res.render("post", { title: storedTitle, post: storedContent });
     }
   });
 });
@@ -56,7 +53,7 @@ app.post("/compose", function (req, res) {
     content: req.body.postBody,
   };
   posts.push(post);
-
+  console.log(post);
   res.redirect("/");
 });
 

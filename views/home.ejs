@@ -1,7 +1,8 @@
 <%- include("partials/header") -%>
 <h1>Home</h1>
 <p><%= homeContent %></p>
-<% postContent.forEach(function(titleName){ %>
+<% postContent.forEach(function(titleName){ %> <% let limit = titleName.content
+%> <% let length = 100 %>
 <h1><%= titleName.title %></h1>
-<p><%= titleName.content %></p>
+<p><%= limit.substring(0, length) + " ..."%></p>
 <% }) %> <%- include("partials/footer") -%>
